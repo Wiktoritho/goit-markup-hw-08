@@ -56,6 +56,15 @@ body {
   margin-left: 215px;
   text-decoration: none;
 }
+.studio-link:visited{
+    color: #212121;
+}
+.studio-link:focus{
+    color: #212121;
+}
+.studio-link:hover{
+    color: #212121;
+}
 .text--blue {
   color: #2196f3;
 }
@@ -128,14 +137,18 @@ body {
 .button-section button {
   width: 121px;
   height: 38px;
-  background-color: #2196f3;
+  background-color: #F5F4Fa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
+  color: #212121;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+}
+.button-section button:hover{
+background-color: #2196f3;
+color: #ffffff;
 }
 .section--white h3 {
   font-weight: 700;
@@ -236,10 +249,10 @@ body {
   color: #ffffff;
 }
 .studio-logo-bottom:hover {
-  color: #2196f3;
+  color: #ffffff;
 }
 .studio-logo-bottom:focus {
-  color: #2196f3;
+  color: #ffffff;
 }
 .address {
   padding-top: 20px;
