@@ -123,6 +123,7 @@ body {
   gap: 8px;
   margin-top: 94px;
   margin-left: 510px;
+  padding-left: 0px;
 }
 .button-section button {
   width: 121px;
@@ -182,7 +183,6 @@ body {
   margin-bottom: 80px;
   margin-left: 215px;
   padding: 0px;
-  width: 322px;
 }
 .portfolio-list {
   list-style: none;
@@ -195,8 +195,8 @@ body {
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
-}
-.portfolio-container h3 {
+} 
+ .portfolio-container h3 { 
   height: 36px;
   margin-left: 24px;
   margin-top: 20px;
@@ -213,9 +213,9 @@ body {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.875;
-  color: #757575;
-}
-.footer {
+  color: #757575; 
+}  
+  .footer {
   width: 1600px;
   height: 192px;
   padding-top: 60px;
