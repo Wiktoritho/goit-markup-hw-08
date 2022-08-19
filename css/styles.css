@@ -1,9 +1,24 @@
+:root {
+  --white: #fff;
+  --black: #212121;
+  --border: #ececec;
+  --blue: #2196f3;
+  --grey: #757575;
+  --background-dark: #2f303a;
+  --shadow-dark: rgba(0, 0, 0, 0.15);
+  --background-white: #f5f4fa;
+  --border-white: #eeeeee;
+  --shadow-bright-one: rgba(0, 0, 0, 0.12);
+  --shadow-bright-two: rgba(0, 0, 0, 0.14);
+  --shadow-bright-three: rgba(0, 0, 0, 0.2);
+  --contact-color: rgba(255, 255, 255, 0.6);
+}
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--white);
+  color: var(--black);
   width: 1600px;
   margin: auto;
   padding: 0;
@@ -13,11 +28,10 @@ body {
 .header {
   width: 1600px;
   height: 80px;
-  background-color: #ffffff;
   flex-direction: row;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border);
 }
 .navigation {
   margin-left: 51px;
@@ -33,19 +47,38 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+.text--blue {
+  color: var(--blue);
+}
+.studio-link:visited {
+  color: var(--black);
+}
+.link {
+  text-decoration: none;
+}
+.link:visited {
+  color: var(--black);
+}
+.link:hover,
+.link:focus {
+  color: var(--blue);
+}
+.link.active {
+  color: var(--blue);
+}
 .contact-mail {
   margin-left: 371px;
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--grey);
 }
 .contact-tel {
   margin-left: 50px;
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--grey);
 }
 .studio-logo {
   font-family: 'Raleway';
@@ -56,33 +89,13 @@ body {
   margin-left: 215px;
   text-decoration: none;
 }
-.studio-link:visited {
-  color: #212121;
-}
-.studio-link:focus {
-  color: #212121;
-}
-.studio-link:hover {
-  color: #212121;
-}
-.text--blue {
-  color: #2196f3;
-}
-.link {
-  text-decoration: none;
-  display: flex;
-}
-.link:visited {
-  color: #212121;
-}
-.link:hover {
-  color: #2196f3;
-}
-.link:focus {
-  color: #2196f3;
+.section--white {
+  width: 1200px;
+  margin-left: 215px;
+  margin-right: 215px;
 }
 .effective-solutions {
-  background-color: #2f303a;
+  background-color: var(--background-dark);
   width: 1600px;
   height: 600px;
 }
@@ -93,7 +106,7 @@ body {
   text-align: center;
   letter-spacing: 0.06cm;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white);
   padding-top: 200px;
   padding-left: 452px;
   padding-right: 452px;
@@ -102,8 +115,8 @@ body {
 }
 .main-button {
   margin-left: 700px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: var(--blue);
+  box-shadow: 0px 4px 4px var(--shadow-dark);
   border-radius: 4px;
   width: 200px;
   height: 50px;
@@ -111,7 +124,7 @@ body {
   line-height: 1.875;
   font-size: 16px;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white);
   cursor: pointer;
 }
 .container-list {
@@ -119,8 +132,6 @@ body {
   flex-direction: row;
   display: flex;
   gap: 30px;
-  margin-left: 215px;
-  margin-right: 215px;
   margin-top: 78px;
   margin-bottom: 0px;
   padding: 0;
@@ -131,24 +142,24 @@ body {
   display: flex;
   gap: 8px;
   margin-top: 94px;
-  margin-left: 510px;
-  padding-left: 0px;
+  padding: 0px;
+  justify-content: center;
 }
-.button-section button {
+.button-container button {
   width: 121px;
   height: 38px;
-  background-color: #f5f4fa;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--background-white);
+  box-shadow: 0px 4px 4px var(--shadow-dark);
   border-radius: 4px;
-  color: #212121;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  font-family: 'Roboto';
 }
-.button-section button:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+.button-container button:hover {
+  background-color: var(--blue);
+  color: var(--white);
 }
 .section--white h3 {
   font-weight: 700;
@@ -160,9 +171,9 @@ body {
 .section--white p {
   text-align: justify;
   line-height: 1.71;
-  color: #757575;
+  color: var(--grey);
 }
-.our-team {
+.heading--second {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -175,21 +186,25 @@ body {
   width: 1600px;
   height: 648px;
   margin-top: 94px;
-  background-color: #f5f4fa;
+  background-color: var(--background-white);
   text-align: center;
   line-height: 1.19;
 }
 .section--grey li {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px var(--shadow-bright-one),
+    0px 1px 1px var(--shadow-bright-two), 0px 2px 1px var(--shadow-bright-three);
   border-radius: 0px 0px 4px 4px;
 }
 .section--grey h3 {
   font-weight: 500;
 }
 .section--grey p {
-  color: #757575;
+  color: var(--grey);
+}
+.team {
+  margin-left: 215px;
+  margin-right: 215px;
 }
 .portfolio-container {
   margin-top: 80px;
@@ -206,8 +221,7 @@ body {
 }
 .portfolio-container li {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-white);
 }
 .portfolio-container h3 {
   height: 36px;
@@ -226,13 +240,13 @@ body {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.875;
-  color: #757575;
+  color: var(--grey);
 }
 .footer {
   width: 1600px;
   height: 192px;
   padding-top: 60px;
-  background-color: #2f303a;
+  background-color: var(--background-dark);
 }
 .studio-logo-bottom {
   font-family: 'Raleway';
@@ -242,22 +256,18 @@ body {
   margin-left: 215px;
   text-decoration: none;
   width: 145px;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
-.studio-logo-bottom:visited {
-  color: #ffffff;
-}
-.studio-logo-bottom:hover {
-  color: #ffffff;
-}
+.studio-logo-bottom:visited,
+.studio-logo-bottom:hover,
 .studio-logo-bottom:focus {
-  color: #ffffff;
+  color: var(--white);
 }
 .address {
   padding-top: 20px;
   padding-left: 215px;
-  color: #ffffff;
+  color: var(--white);
   line-height: 24px;
   flex-direction: row;
   display: flex;
@@ -267,7 +277,7 @@ body {
   padding-top: 9px;
   padding-left: 215px;
   line-height: 24px;
-  width: 231px;
-  height: 21px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact-color);
+  flex-direction: column;
+  display: flex;
 }
