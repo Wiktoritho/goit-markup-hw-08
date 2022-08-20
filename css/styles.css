@@ -72,6 +72,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--grey);
+  font-style: normal;
 }
 .contact-tel {
   margin-left: 50px;
@@ -79,6 +80,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--grey);
+  font-style: normal;
 }
 .studio-logo {
   font-family: 'Raleway';
@@ -269,13 +271,10 @@ body {
   padding-left: 215px;
   color: var(--white);
   line-height: 24px;
-  flex-direction: row;
-  display: flex;
   font-style: normal;
 }
 .footer-contact {
   padding-top: 9px;
-  padding-left: 215px;
   line-height: 24px;
   color: var(--contact-color);
   flex-direction: column;
