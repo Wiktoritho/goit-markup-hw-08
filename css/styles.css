@@ -263,4 +263,5 @@ body {
   flex-direction: column;
   display: flex;
   margin: 9px 0;
+  max-width: 231px;
 }
