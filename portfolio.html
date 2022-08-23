@@ -12,13 +12,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    />
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <a class="studio-logo studio-link" href="./index.html">
         <span class="text--blue">Web</span>Studio</a
       >
-      <nav class="navigation">
+      <nav>
         <ul class="nav-list">
           <li>
             <a class="link" href="./index.html">Agencja</a>
@@ -29,15 +34,18 @@
           <li>Kontakt</li>
         </ul>
       </nav>
-      <address>
-      <a class="contact-mail link" href="mailto:info@example.com"
-        >info@example.com</a
-      >
-      <a class="contact-tel link" href="tel:+48111111111">+48 111 111 111</a>
-    </address>
+      <address class="contacts">
+        <a class="contacts-item link" href="mailto:info@example.com"
+          >info@example.com</a
+        >
+        <a class="contacts-item link" href="tel:+48111111111"
+          >+48 111 111 111</a
+        >
+      </address>
     </header>
     <main>
-      <section class="section--white">
+      <div class="border"></div>
+      <div class="section container no-bottom-padding">
         <ul class="button-container">
           <li>
             <button type="button">Wszystkie</button>
@@ -55,8 +63,8 @@
             <button type="button">Marketing</button>
           </li>
         </ul>
-      </section>
-      <section class="portfolio-container">
+      </div>
+      <section class="section container portfolio">
         <ul class="portfolio-list">
           <li>
             <img
@@ -152,18 +160,20 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="studio-logo-bottom" href="./index.html"
-        ><span class="text--blue">Web</span>Studio</a
-      >
-      <address class="address">
-        m. Warszawa, Aleje Jerozolimskie 21
-        <a class="footer-contact link" href="mailto:info@example.com"
-          >info@example.com</a
+      <div class="container">
+        <a class="studio-logo-bottom" href="./index.html"
+          ><span class="text--blue">Web</span>Studio</a
         >
-        <a class="footer-contact link" href="tel:+48111111111"
-          >+48 111 111 111</a
-        >
-      </address>
+        <address class="address">
+          m. Warszawa, Aleje Jerozolimskie 21
+          <a class="footer-contact link" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+          <a class="footer-contact link" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>
