@@ -19,7 +19,7 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--white);
   color: var(--black);
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
   font-weight: 400;
 }
@@ -27,16 +27,16 @@ body {
   flex-direction: row;
   display: flex;
   align-items: center;
-  padding: 25px 0px 24px 0px;
+  padding: 25px 0 24px 0;
   gap: 93px;
+  justify-content: space-between;
 }
-.border {
+.header-border{
   border-bottom: 1px solid var(--border);
 }
 .container {
   width: 1200px;
   margin: 0 auto;
-  justify-content: center;
 }
 .nav-list {
   list-style: none;
@@ -97,7 +97,7 @@ body {
 }
 .effective-solutions {
   background-color: var(--background-dark);
-  width: 1600px;
+  width: 100%;
   display: flex;
   gap: 30px;
   flex-direction: column;
@@ -206,8 +206,9 @@ body {
   align-items: center;
 }
 .portfolio {
-  padding-top: 0px;
+  padding-top: 0;
   margin-top: 50px;
+  justify-content: center;
 }
 .portfolio-list {
   list-style: none;
