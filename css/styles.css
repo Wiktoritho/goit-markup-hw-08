@@ -20,8 +20,10 @@ body {
   background-color: var(--white);
   color: var(--black);
   width: 100%;
-  margin: 0 auto;
   font-weight: 400;
+}
+.main-page {
+  margin: 0 auto;
 }
 .header {
   flex-direction: row;
@@ -31,7 +33,7 @@ body {
   gap: 93px;
   justify-content: space-between;
 }
-.header-border{
+.header-border {
   border-bottom: 1px solid var(--border);
 }
 .container {
