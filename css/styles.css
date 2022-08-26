@@ -165,14 +165,14 @@ body {
   background-color: var(--blue);
   color: var(--white);
 }
-.lorem-header {
+.section--white-header {
   font-weight: 700;
   font-style: normal;
   line-height: 1.14;
   text-transform: uppercase;
   margin: 0 0 10px 0;
 }
-.lorem-paragraph {
+.section--white-paragraph {
   line-height: 1.71;
   color: var(--grey);
   margin: 0;
