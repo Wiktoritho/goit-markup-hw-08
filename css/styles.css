@@ -4,6 +4,7 @@
   --border: #ececec;
   --blue: #2196f3;
   --grey: #757575;
+  --grey-text: #afb1b8;
   --background-dark: #2f303a;
   --shadow-dark: rgba(0, 0, 0, 0.15);
   --background-white: #f5f4fa;
@@ -58,15 +59,17 @@ body {
 .studio-link:visited {
   color: var(--black);
 }
-.link {
-  text-decoration: none;
-}
 .link:visited {
   color: var(--black);
 }
 .link:hover,
 .link:focus {
   color: var(--blue);
+  fill: var(--blue);
+}
+.link {
+  text-decoration: none;
+  fill: var(--grey);
 }
 .link.active {
   color: var(--blue);
@@ -76,6 +79,12 @@ body {
   gap: 50px;
   padding: 0 0 0 278px;
   margin: 0;
+}
+.contacts-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .contacts-item {
   line-height: 1.2;
@@ -99,12 +108,16 @@ body {
 }
 .effective-solutions {
   background-color: var(--background-dark);
-  width: 100%;
+  width: 1600px;
   display: flex;
   gap: 30px;
   flex-direction: column;
   align-items: center;
   padding-bottom: 200px;
+  background-image: url('/images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: difference;
 }
 .effective-solutions h1 {
   font-size: 44px;
@@ -152,8 +165,8 @@ body {
 }
 .button-container button {
   background-color: var(--background-white);
-  box-shadow: 0px 4px 4px var(--shadow-dark);
   border-radius: 4px;
+  border-style: none;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -161,9 +174,11 @@ body {
   font-family: 'Roboto';
   padding: 6px 22px;
 }
-.button-container button:hover {
+.button-container button:hover,
+.button-container button:focus {
   background-color: var(--blue);
   color: var(--white);
+  box-shadow: 0px 4px 4px var(--shadow-dark);
 }
 .section--white-header {
   font-weight: 700;
@@ -199,13 +214,11 @@ body {
 }
 .section--grey p {
   color: var(--grey);
-  margin: 0 0 30px 0;
+  margin: 0 0 16px 0;
 }
 .team-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .portfolio {
   padding-top: 0;
@@ -223,6 +236,13 @@ body {
 .portfolio-list li {
   box-sizing: border-box;
   border-bottom: 1px solid var(--border-white);
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+.portfolio-list li:hover,
+.portfolio-list li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 .portfolio-list h3 {
   font-weight: 700;
@@ -267,4 +287,78 @@ body {
   display: flex;
   margin: 9px 0;
   width: 231px;
+}
+.icon-container {
+  background-color: var(--background-white);
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.container-icons {
+  display: flex;
+  margin: 0 0 30px 0;
+  gap: 10px;
+}
+.container-icons > a {
+  fill: var(--grey-text);
+  background-color: var(--white);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0 12px;
+}
+.container-icons a:hover,
+.container-icons a:focus {
+  background-color: var(--blue);
+  fill: var(--white);
+  cursor: pointer;
+}
+.icon-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--grey-text);
+  border-radius: 4px;
+  fill: var(--grey-text);
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-item:hover,
+.icon-item:focus {
+  fill: var(--blue);
+  border: 1px solid var(--blue);
+  cursor: pointer;
+}
+.flex-container {
+  display: flex;
+}
+.footer-icon-container {
+  margin: 8px 0px 20px 70px;
+}
+.header--white {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 700;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+.flex-container > a {
+  fill: white;
+  width: 44px;
+  height: 44px;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.flex-container > a:hover,
+.flex-container > a:focus {
+  cursor: pointer;
+  background-color: var(--blue);
+}
+.social-icon {
+  margin-top: 12px;
 }
