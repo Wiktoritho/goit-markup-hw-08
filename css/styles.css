@@ -108,7 +108,7 @@ body {
 }
 .effective-solutions {
   background-color: var(--background-dark);
-  width: 1600px;
+  width: 100%;
   display: flex;
   gap: 30px;
   flex-direction: column;
@@ -233,10 +233,8 @@ body {
   padding: 0;
   margin: 0;
 }
-.portfolio-list li {
-  box-sizing: border-box;
-  border-bottom: 1px solid var(--border-white);
-  flex-basis: calc((100% - 2 * 30px) / 3);
+.portfolio-list li{
+  border: 1px solid var(--border-white);
 }
 .portfolio-list li:hover,
 .portfolio-list li:focus {
