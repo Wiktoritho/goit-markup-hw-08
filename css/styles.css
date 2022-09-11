@@ -4,6 +4,7 @@
   --border: #ececec;
   --blue: #2196f3;
   --grey: #757575;
+  --red: #d30000;
   --grey-text: #afb1b8;
   --darker-background: #125286;
   --background-dark: #2f303a;
@@ -465,13 +466,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .close-btn:focus,
 .close-btn:hover {
   cursor: pointer;
+  background-color: var(--background-dark);
+}
+.close-btn:focus .close-icon,
+.close-btn:hover .close-icon {
+  fill: white;
 }
 .close-icon {
+  flex-shrink: 0;
   fill: var(--background-dark);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.close-icon:hover,
+.close-icon:focus {
+  fill: var(--white);
 }
 .input-email-label {
   width: 358px;
@@ -539,14 +552,14 @@ form {
   margin: 20px 4px 30px 0;
   opacity: 0;
 }
-.form-acceptance-input:checked ~.tick-box {
+.form-acceptance-input:checked ~ .tick-box {
   background-color: var(--blue);
   border: none;
 }
 .tick-icon {
   fill: var(--white);
   position: absolute;
-  top: 404px;
+  top: 406px;
   left: 65px;
   z-index: 999;
 }
@@ -556,7 +569,7 @@ form {
   border-radius: 2px;
   height: 16px;
   width: 16px;
-  top: 404px;
+  top: 406px;
   left: 64px;
   cursor: pointer;
 }
@@ -576,10 +589,12 @@ form {
 .form-link {
   color: var(--blue);
   text-decoration: underline;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .form-link:hover,
 .form-link:focus {
   cursor: pointer;
+  color: var(--red);
 }
 .form-icon {
   position: absolute;
@@ -597,6 +612,7 @@ form {
 .form-textarea:focus {
   outline: none;
 }
-.form-label:hover .form-icon {
+.form-label:hover .form-icon,
+.form-label:focus .form-icon{
   fill: var(--blue);
 }
