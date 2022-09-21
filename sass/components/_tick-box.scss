@@ -1,0 +1,17 @@
+.tick-box {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+  top: 1px;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: $black 1px solid;
+  &:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+}
