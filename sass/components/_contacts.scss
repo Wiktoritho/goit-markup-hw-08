@@ -1,0 +1,14 @@
+.contacts {
+  display: flex;
+  gap: 50px;
+  padding: 0 0 0 278px;
+  margin: 0;
+  &__item {
+    @include set-flex(row,center,center);
+    gap: 10px;
+    line-height: 1.2;
+    @include font-styles(14px, 500, 0.02em);
+    color: $grey;
+    font-style: normal;
+  }
+}
