@@ -1,0 +1,27 @@
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: $white;
+  margin: auto;
+  padding: 0;
+  box-shadow: 0px 1px 3px $shadow-bright--one, 0px 1px 1px $shadow-bright--two,
+    0px 2px 1px $shadow-bright--three;
+  border-radius: 4px;
+  @include set-flex(column, none, center);
+  gap: 10px;
+}
+.backdrop {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $backdrop--color;
+  transition: ease-in-out 500ms;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
