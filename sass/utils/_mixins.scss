@@ -1,0 +1,11 @@
+@mixin font-styles($size, $weight, $spacing) {
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+@mixin set-flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
