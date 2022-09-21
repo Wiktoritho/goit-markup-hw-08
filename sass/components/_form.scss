@@ -1,0 +1,105 @@
+.form-header {
+  line-height: 1.15;
+  @include set-flex(row, center, none);
+  @include font-styles(14px, 700, 0.03em);
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.form-label {
+  @include font-styles(12px, 400, 0.01em);
+  line-height: 1.15;
+  color: $grey;
+  position: relative;
+  &:hover .form-icon,
+  &:focus .form-icon {
+    fill: $blue;
+  }
+}
+
+.form-input {
+  height: 40px;
+  width: 448px;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  padding-left: 42px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  display: flex;
+  &:hover {
+    outline: none;
+    border-color: $blue;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-textarea {
+  width: 448px;
+  height: 120px;
+  border: 1px solid $input-border;
+  margin-top: 4px;
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  display: flex;
+  &:hover {
+    outline: none;
+    border-color: $blue;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-textarea:placeholder-shown {
+  color: $textarea-color;
+  @include font-styles(14px, 400, 0.01em);
+  line-height: 1.15;
+}
+
+.form-acceptance-container {
+  @include set-flex(column, none, center);
+  gap: 30px;
+}
+
+.form-acceptance-label {
+  margin-top: 20px;
+& input:checked ~ .tick-box {
+        background-color: $blue;
+        border: none;
+    }
+
+& input:checked ~ .tick-box:after {
+        display: block;
+    }
+}
+
+.form-acceptance-hidden {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-link {
+  color: $blue;
+  text-decoration: underline;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $red;
+  }
+}
+
+.form-icon {
+  position: absolute;
+  top: 33px;
+  left: 15px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  z-index: 1;
+}
