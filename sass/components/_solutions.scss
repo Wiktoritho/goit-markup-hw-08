@@ -1,0 +1,20 @@
+.solutions {
+  width: 100%;
+  background-color: $background--dark;
+  gap: 30px;
+  @include set-flex(column, center, center);
+  padding-bottom: 200px;
+  background-image: url('../images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: difference;
+  &__header {
+    @include font-styles(44px, 900, 0.06cm);
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    margin: 0;
+    padding-top: 200px;
+  }
+}
