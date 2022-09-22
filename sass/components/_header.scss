@@ -1,9 +1,33 @@
 .header {
   border-bottom: 1px solid $border;
   &__block {
-    @include set-flex(row,space-between,center);
+    @include set-flex(row, space-between, center);
     padding: 25px 0 24px 0;
     gap: 93px;
   }
+  &__container {
+    display: flex;
+    gap: 50px;
+    padding: 0 0 0 278px;
+    margin: 0;
+  }
+  &__contact {
+    @include set-flex(row, center, center);
+    gap: 10px;
+    line-height: 1.2;
+    @include font-styles(14px, 500, 0.02em);
+    color: $grey;
+    font-style: normal;
+  }
+  &__navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 46px;
+    padding: 0;
+  }
+  &__item {
+    line-height: 1.14;
+    @include font-styles(14px, 500, 0.02em);
+  }
 }
-
