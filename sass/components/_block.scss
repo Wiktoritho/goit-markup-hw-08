@@ -10,4 +10,5 @@
   &__background {
     background-color: $background--white;
   }
+  @extend .container;
 }
