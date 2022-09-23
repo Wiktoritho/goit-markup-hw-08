@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link href="./css/main.min.css" rel="stylesheet" />
+        <!-- <link href="/css/styles.css" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,37 +22,36 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="header__block container">
-        <a class="studio-logo" href="./index.html">
-          <span class="studio-logo--blue">Web</span>Studio</a>
-        <nav>
-          <ul class="header__navigation">
-            <li class="header__item">
-              <a class="link" href="./index.html">Agencja</a>
-            </li>
-            <li class="navigation__item">
-              <a class="link link--active" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li>Kontakt</li>
-          </ul>
-        </nav>
-        <div class="header__container">
-          <a class="header__contact link" href="mailto:info@example.com">
-            <svg width="16" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            info@example.com</a>
-          <a class="header__contact link" href="tel:+48111111111">
-            <svg width="10" height="16">
-              <use href="./images/icons.svg#icon-tel"></use>
-            </svg>
-            +48 111 111 111</a>
-        </div>
+  <header class="header container">
+    <div class="header__block container">
+      <a class="header__studio-logo" href="./index.html">
+        <span class="header__studio-logo--blue">Web</span>Studio</a>
+      <nav>
+        <ul class="header__navigation">
+          <li class="header__item">
+            <a class="link link" href="./index.html">Agencja</a>
+          </li>
+          <li class="header__item">
+            <a class="link link--active" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li>Kontakt</li>
+        </ul>
+      </nav>
+      <div class="header__container">
+        <a class="header__contact link" href="mailto:info@example.com">
+          <svg width="16" height="12">
+            <use href="./images/icons.svg#icon-mail"></use>
+          </svg>
+          info@example.com</a>
+        <a class="header__contact link" href="tel:+48111111111">
+          <svg width="10" height="16">
+            <use href="./images/icons.svg#icon-tel"></use>
+          </svg>
+          +48 111 111 111</a>
       </div>
-    </header>
+    </div>
+  </header>
     <main>
-      <div class="section container section--no-padding">
         <ul class="buttons">
           <li>
             <button class="buttons__item" type="button">Wszystkie</button>
@@ -69,11 +69,10 @@
             <button class="buttons__item" type="button">Marketing</button>
           </li>
         </ul>
-      </div>
-      <section class="section container portfolio">
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+      <section class="container">
+        <ul class="portfolio">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -90,8 +89,8 @@
             <h3 class="portfolio__header">Technocrack</h3>
             <p class="portfolio__description">Strona internetowa</p>
           </li>
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -108,8 +107,8 @@
             <h3 class="portfolio__header" >Grafika New Orlean vs Golden Star</h3>
             <p class="portfolio__description">Dizajn</p>
           </li>
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -126,8 +125,8 @@
             <h3 class="portfolio__header">Restauracja SeaFood</h3>
             <p class="portfolio__description">Aplikacja</p>
           </li>
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -144,8 +143,8 @@
             <h3 class="portfolio__header">Projekt Prime</h3>
             <p class="portfolio__description">Marketing</p>
           </li>
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -162,8 +161,8 @@
             <h3 class="portfolio__header">Projekt Boxes</h3>
             <p class="portfolio__description">Aplikacja</p>
           </li>
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -180,8 +179,8 @@
             <h3 class="portfolio__header">Inspiration has no Borders</h3>
             <p class="portfolio__description">Strona Internetowa</p>
           </li>
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -198,8 +197,8 @@
             <h3 class="portfolio__header">Magazyn Limited Edition</h3>
             <p class="portfolio__description">Dizajn</p>
           </li>
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -216,8 +215,8 @@
             <h3 class="portfolio__header">Projekt LAB</h3>
             <p class="portfolio__description">Marketing</p>
           </li>
-          <li class="portfolio__item">
-            <div class="portfolio__container">
+          <li class="portfolio__card">
+            <div class="description-hidden">
               <p class="portfolio__animation">
                 Technocrack jest popularną platformą wykorzystywaną do
                 rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -237,44 +236,44 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footer__flex">
+    <footer>
+      <div class="container footer">
         <div>
-          <a class="footer--studio-logo" href="./index.html"><span class="studio-logo--blue">Web</span>Studio</a>
+          <a class="footer__studio-logo" href="./index.html"><span class="footer__studio-logo--blue">Web</span>Studio</a>
           <address class="footer__address">
             m. Warszawa, Aleje Jerozolimskie 21
             <a class="footer--contact link" href="mailto:info@example.com">info@example.com</a>
             <a class="footer--contact link" href="tel:+48111111111">+48 111 111 111</a>
           </address>
         </div>
-        <div class="footer__container">
+        <div>
           <h4 class="footer__header">Dołącz do nas</h4>
-          <div class="footer__flex">
-            <a class="footer__icon" href="https://www.instagram.com" target="_blank"><svg class="social-icon" height="20"
-                width="20">
+          <div class="footer__icons">
+            <a class="footer__link" href="https://www.instagram.com" target="_blank">
+              <svg class="social-icon" height="20" width="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
-            <a class="footer__icon" href="https://www.twitter.com" target="_blank"><svg class="social-icon" height="20"
-                width="20 ">
+            <a class="footer__link" href="https://www.twitter.com" target="_blank">
+              <svg class="social-icon" height="20" width="20 ">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
-            <a class="footer__icon" href="https://www.facebook.com" target="_blank"><svg class="social-icon" height="20"
-                width="20 ">
+            <a class="footer__link" href="https://www.facebook.com" target="_blank">
+              <svg class="social-icon" height="20" width="20 ">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
-            <a class="footer__icon" href="https://www.linkedin.com" target="_blank"><svg class="social-icon" height="20"
-                width="20 ">
+            <a class="footer__link" href="https://www.linkedin.com" target="_blank">
+              <svg class="social-icon" height="20" width="20 ">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>
           </div>
         </div>
-        <div class="footer__container">
+        <div>
           <h4 class="footer__header">Zapisz się do newslettera</h4>
-          <div class="footer__flex">
+          <div class="footer__newsletter">
             <input class="footer__input" type="email" name="email" placeholder="E-mail" />
             <button class="button--blue" type="submit">
               Zapisz się
