@@ -1,0 +1,13 @@
+.block {
+    @include set-flex(column, center, center);
+  padding: 94px 0;
+  gap: 50px;
+  &__header {
+    @include font-styles(36px, 700, 0.03em);
+    line-height: 1.16;
+    margin: 0;
+  }
+  &__background {
+    background-color: $background--white;
+  }
+}
