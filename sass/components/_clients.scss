@@ -1,8 +1,11 @@
 .clients {
-    @include set-flex(row, center, center);
-  gap: 30px;
+  margin: 0;
   padding: 0;
   list-style: none;
+  &__container {
+    @include set-flex(row, center, center);
+    gap: 30px;
+  }
   &__logo {
     @include set-flex(row, center, center);
     width: 170px;
