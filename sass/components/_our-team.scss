@@ -1,0 +1,40 @@
+.our-team {
+  @include set-flex(row, center, center);
+  gap: 30px;
+  padding: 0;
+  &__card {
+    @include set-flex(column, center, center);
+    background-color: $white;
+    box-shadow: 0px 1px 3px $shadow-bright--one, 0px 1px 1px $shadow-bright--two,
+      0px 2px 1px $shadow-bright--three;
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__name {
+    @include font-styles(16px, 500, 0.03em);
+    margin: 30px 0 10px 0;
+  }
+  &__description {
+    color: $grey;
+    margin: 0 0 16px 0;
+  }
+  &__icons {
+    display: flex;
+    margin: 0 0 30px 0;
+    gap: 10px;
+  }
+    &__link {
+      fill: $text--grey;
+      background-color: $white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      padding: 0 12px;
+    }
+    &__link:hover,
+    &__link:focus {
+      background-color: $blue;
+      fill: $white;
+      cursor: pointer;
+      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    }
+}
