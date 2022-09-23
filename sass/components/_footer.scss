@@ -3,6 +3,7 @@ footer {
   padding: 60px 0;
 }
 .footer {
+  @extend .container;
   @include set-flex(row, center, none);
   gap: 70px;
   &__link {
