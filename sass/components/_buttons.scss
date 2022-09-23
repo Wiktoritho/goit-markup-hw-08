@@ -1,5 +1,5 @@
 .button--blue {
-  background-color: $blue;
+  background: $blue;
   box-shadow: 0px 4px 4px $shadow--dark;
   border-radius: 4px;
   border-style: none;
@@ -11,59 +11,33 @@
   cursor: pointer;
   @include set-flex(row, center, center);
   gap: 24px;
-
   &:hover,
   &:focus {
     background-color: $background--darker;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
 }
-.close-button {
-  height: 30px;
-  width: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: $white;
-  position: relative;
-  top: 8px;
-  left: 240px;
-  z-index: 1;
-  @include set-flex(row, center, center);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
-  &:focus,
-  &:hover {
-    cursor: pointer;
-    background-color: $background--dark;
-  }
-
-  &:focus .close-icon,
-  &:hover .close-icon {
-    fill: $white;
-  }
-}
 .buttons {
+    @include set-flex(row, center, center);
   list-style: none;
-  @include set-flex(row, center, none);
   gap: 8px;
-  margin: 0;
+  margin: 94px 0 0 0;
   padding: 0;
   &__item {
     background-color: $background--white;
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
+    @include font-styles(16px, 500, 0.03em);
     line-height: 1.62;
     font-family: 'Roboto';
     padding: 6px 22px;
-    &:hover,
-    &:focus {
-      background-color: $blue;
-      color: $white;
-      box-shadow: 0px 4px 4px $shadow--dark;
-      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    }
+  }
+  &__item:hover,
+  &__item:focus {
+    background-color: $blue;
+    color: $white;
+    box-shadow: 0px 4px 4px $shadow--dark;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
 }
