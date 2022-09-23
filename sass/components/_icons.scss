@@ -1,37 +1,6 @@
 .social-icon {
-  margin-top: 12px;
-}
-.icon-item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid $text--grey;
-  border-radius: 4px;
-  fill: $text--grey;
-  @include set-flex(row, center, center);
-  &:hover,
-  &:focus {
-    fill: $blue;
-    border: 1px solid $blue;
-    cursor: pointer;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
+    margin-top: 12px;
 }
 .newsletter-icon {
-  fill: $white;
-}
-.close-icon {
-  flex-shrink: 0;
-  fill: $background--dark;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
-&:hover,
-&:focus {
-  fill: $white;
-}
-}
-.tick-icon {
-  position: relative;
-  fill: $white;
-  z-index: 1;
-  left: 19px;
+    fill: $white;
 }
