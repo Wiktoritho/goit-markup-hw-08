@@ -5,20 +5,6 @@
     padding: 25px 0 24px 0;
     gap: 93px;
   }
-  &__container {
-    display: flex;
-    gap: 50px;
-    padding: 0 0 0 278px;
-    margin: 0;
-  }
-  &__contact {
-    @include set-flex(row, center, center);
-    gap: 10px;
-    line-height: 1.2;
-    @include font-styles(14px, 500, 0.02em);
-    color: $grey;
-    font-style: normal;
-  }
   &__navigation {
     list-style: none;
     display: flex;
@@ -27,7 +13,34 @@
     padding: 0;
   }
   &__item {
-    line-height: 1.14;
     @include font-styles(14px, 500, 0.02em);
+    line-height: 1.14;
+  }
+  &__container {
+    display: flex;
+    gap: 50px;
+    padding: 0 0 0 278px;
+    margin: 0;
+  }
+  &__contact {
+    @include set-flex(row, center, center);
+    @include font-styles(14px, 500, 0.02em);
+    gap: 10px;
+    line-height: 1.2;
+    color: $grey;
+    font-style: normal;
+  }
+  &__studio-logo {
+    font-family: 'Raleway';
+    @include font-styles(26px, 700, 0.03em);
+    line-height: 1.193;
+    text-decoration: none;
+  }
+  &__studio-logo--blue {
+    color: $blue;
+  }
+
+  &__studio-logo:visited {
+    color: $black;
   }
 }
