@@ -1,7 +1,7 @@
 .header {
-  @extend .container;
   border-bottom: 1px solid $border;
   &__block {
+    @extend .container;
     @include set-flex(row, space-between, center);
     padding: 25px 0 24px 0;
     gap: 93px;
