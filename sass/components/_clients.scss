@@ -1,0 +1,21 @@
+.clients {
+    @include set-flex(row, center, center);
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+  &__logo {
+    @include set-flex(row, center, center);
+    width: 170px;
+    height: 92px;
+    border: 1px solid $text--grey;
+    border-radius: 4px;
+    fill: $text--grey;
+  }
+  &__logo:hover,
+  &__logo:focus {
+    fill: $blue;
+    border: 1px solid $blue;
+    cursor: pointer;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
