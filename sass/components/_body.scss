@@ -1,7 +1,9 @@
 body {
-  background-color: $white;
-  color: $black;
-  width: 100%;
-  font-family: $site-fonts;
-  @include font-styles(14px, 400, 0.03em);
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: $white;
+    color: $black;
+    width: 100%;
+    font-weight: 400;
 }
