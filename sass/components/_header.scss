@@ -1,37 +1,28 @@
 .header {
   @extend .container;
   border-bottom: 1px solid $border;
-
   &__block {
     @include set-flex(row, space-between, center);
     padding: 25px 0 24px 0;
     gap: 93px;
   }
-
   &__navigation {
     list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0;
     gap: 46px;
     padding: 0;
   }
-
   &__point {
     @include font-styles(14px, 500, 0.02em);
     line-height: 1.14;
   }
-
   &__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 50px;
     padding: 0 0 0 278px;
     margin: 0;
   }
-
   &__contact {
     @include set-flex(row, center, center);
     @include font-styles(14px, 500, 0.02em);
@@ -41,14 +32,12 @@
     font-style: normal;
     @extend .link;
   }
-
   &__studio-logo {
     font-family: 'Raleway';
     @include font-styles(26px, 700, 0.03em);
     line-height: 1.193;
     text-decoration: none;
   }
-
   &__studio-logo--blue {
     color: $blue;
   }
