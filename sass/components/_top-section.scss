@@ -9,6 +9,7 @@
     @include set-flex(column, center, center);
     padding: 200px 0;
     gap: 30px;
+    @extend .container;
   }
   &__header {
     @include font-styles(44px, 900, 0.06cm);
