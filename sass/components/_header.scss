@@ -12,7 +12,7 @@
     gap: 46px;
     padding: 0;
   }
-  &__item {
+  &__point {
     @include font-styles(14px, 500, 0.02em);
     line-height: 1.14;
   }
@@ -29,6 +29,7 @@
     line-height: 1.2;
     color: $grey;
     font-style: normal;
+    @extend .link;
   }
   &__studio-logo {
     font-family: 'Raleway';
@@ -43,4 +44,5 @@
   &__studio-logo:visited {
     color: $black;
   }
+  @extend .container;
 }
