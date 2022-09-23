@@ -1,7 +1,19 @@
-.footer {
+footer {
   background-color: $background--dark;
   padding: 60px 0;
-  &--studio-logo {
+}
+.footer {
+  @include set-flex(row, center, none);
+  gap: 70px;
+  &__link {
+    fill: $white;
+    background-color: $background--footer-icon;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0 12px;
+  }
+  &__studio-logo {
     font-family: 'Raleway';
     @include font-styles(26px, 700, 0.03em);
     line-height: 1.19;
@@ -9,60 +21,28 @@
     color: $white;
     text-decoration: none;
   }
-
-&--studio-logo:visited,
-&--studio-logo:hover,
-&--studio-logo:focus {
+  &__studio-logo:visited,
+  &__studio-logo:hover,
+  &__studio-logo:focus {
     color: $white;
   }
-
-&__address {
+  &__address {
     color: $white;
     line-height: 1.71;
     font-style: normal;
     margin-top: 20px;
   }
-
-&--contact {
+  &--contact {
     color: $contact--color;
     flex-direction: column;
     display: flex;
     margin: 9px 0;
     width: 231px;
   }
-&__flex {
+  &__newsletter {
     display: flex;
   }
-
-&__container {
-    margin: 8px 0px 20px 70px;
-  }
-
-&__header {
-    color: $white;
-    text-transform: uppercase;
-    @include font-styles(14px, 700, 0.03em);
-    line-height: 1.2;
-    margin: 0 0 20px 0;
-  }
-
-&__icon {
-    fill: $white;
-    width: 44px;
-    height: 44px;
-    padding: 0 12px;
-    background-color: $background--footer-icon;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-
-&__icon:hover,
-&__icon:focus {
-    cursor: pointer;
-    background-color: $blue;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
-&__input {
+  &__input {
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -73,5 +53,32 @@
     color: $white;
     padding-left: 16px;
     line-height: 1.25;
+  }
+  &__studio-logo--blue {
+    color: $blue;
+  }
+  &__container {
+    margin: 8px 0px 20px 70px;
+  }
+
+  &__header {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 700;
+    line-height: 1.2;
+    margin: 20px 0 20px 0;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  &__link:hover,
+  &__link:focus {
+    cursor: pointer;
+    background-color: $blue;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
 }
