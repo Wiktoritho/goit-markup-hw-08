@@ -38,6 +38,7 @@ footer {
     display: flex;
     margin: 9px 0;
     width: 231px;
+    @extend .link;
   }
   &__newsletter {
     display: flex;
