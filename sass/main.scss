@@ -1,7 +1,6 @@
 @import './utils/mixins.scss';
 @import './utils/vars.scss';
 @import './components/header.scss';
-@import './components/box.scss';
 @import './components/body.scss';
 @import './components/link.scss';
 @import './components/slider.scss';
@@ -15,3 +14,5 @@
 @import './components/footer.scss';
 @import './components/modal.scss';
 @import './components/portfolio.scss';
+@import './components/mobile-hidden.scss';
+@import './components/mobile.scss';
