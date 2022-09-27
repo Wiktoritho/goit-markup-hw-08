@@ -3,13 +3,15 @@
   padding: 0;
   list-style: none;
   &__container {
-    @include set-flex(row, center, center);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
   }
   &__logo {
     @include set-flex(row, center, center);
-    width: 170px;
-    height: 92px;
+    padding: 16px 52px 16px 52px;
     border: 1px solid $text--grey;
     border-radius: 4px;
     fill: $text--grey;
@@ -20,5 +22,14 @@
     border: 1px solid $blue;
     cursor: pointer;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__logo {
+      padding: 0;
+      width: 170px;
+      height: 92px;
+    }
   }
 }
