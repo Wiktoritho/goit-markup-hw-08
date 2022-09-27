@@ -1,0 +1,112 @@
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle {
+  min-height: 19px;
+  min-width: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  fill: $black;
+  top: 21px;
+  right: 25px;
+  &:focus,
+  &:hover {
+    fill: $blue;
+  }
+}
+.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $white;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 306px;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    &-link {
+      @include font-styles(40px, 500, 0.03em);
+      text-decoration: none;
+      color: $black;
+      &:hover,
+      &:focus {
+        color: $blue;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+  &__contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &-phone {
+      text-decoration: none;
+      @include font-styles(34px, 500, 0.03em);
+      color: $blue;
+    }
+    &-email {
+      text-decoration: none;
+      @include font-styles(24px, 500, 0.03em);
+      color: $grey;
+      &:hover,
+      &:focus{
+        color: $blue;
+      }
+    }
+  }
+  &__socials {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    &-link {
+      @include font-styles(18px, 500, 0.03em);
+      text-decoration: none;
+      color: $blue;
+    }
+    &-line{
+      @include font-styles(18px, 100, 0.03em);
+      color: $grey;
+    }
+  }
+  &__exit {
+    width: 19px;
+    height: 19px;
+  }
+}
