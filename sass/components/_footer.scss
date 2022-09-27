@@ -2,86 +2,128 @@
   background-color: $background--dark;
   padding: 60px 0;
   &__container {
-    @extend .box;
+    margin: 0 auto;
+  }
+  &__link {
+    fill: $white;
+    background-color: $background--footer-icon;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0 12px;
+  }
+  &__studio-logo {
+    font-family: 'Raleway';
+    @include font-styles(26px, 700, 0.03em);
+    line-height: 1.19;
+    text-decoration: none;
+    color: $white;
+  }
+  &__studio-logo:visited,
+  &__studio-logo:hover,
+  &__studio-logo:focus {
+    color: $white;
+  }
+  &__address {
+    @include set-flex(column, center, center);
+    gap: 8px; 
+    color: $white;
+    line-height: 1.71;
+    font-style: normal;
+    margin-top: 20px;
+    width: 246px;
+  }
+  &--contact {
+    color: $contact--color;
+  }
+  &__newsletter {
+    @include set-flex(column, center, center);
+    gap: 20px;
+  }
+  &__input {
+    width: 450px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid $footer-border;
+    filter: drop-shadow(0px 4px 4px $filter-color);
+    border-radius: 4px;
+    color: $white;
+    padding-left: 16px;
+    line-height: 1.25;
+  }
+  &__studio-logo--blue {
+    color: $blue;
+  }
+  &__box {
+    @include set-flex(column,center,center);
+    margin-bottom: 60px;
+  }
+  &__header {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 700;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+  }
+  &__icons {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+  }
+  &__link:hover,
+  &__link:focus {
+    cursor: pointer;
+    background-color: $blue;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
+@media screen and (min-width:768px) {
+  .footer {
+      &__container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        padding: 0 90px;
+      }
+      &__box {
+        padding: 0;
+        margin: 0;
+      }
+    }
+}
+@media screen and (min-width:1200px){
+.footer {
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
     @include set-flex(row, center, none);
     gap: 70px;
   }
-    &__link {
-      fill: $white;
-      background-color: $background--footer-icon;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      padding: 0 12px;
-    }
-    &__studio-logo {
-      font-family: 'Raleway';
-      @include font-styles(26px, 700, 0.03em);
-      line-height: 1.19;
-      text-decoration: none;
-      color: $white;
-      text-decoration: none;
-    }
-    &__studio-logo:visited,
-    &__studio-logo:hover,
-    &__studio-logo:focus {
-      color: $white;
-    }
-    &__address {
-      color: $white;
-      line-height: 1.71;
-      font-style: normal;
-      margin-top: 20px;
-      width: 246px;
-    }
-    &--contact {
-      color: $contact--color;
-      flex-direction: column;
-      display: flex;
-      margin: 9px 0;
-      width: 231px;
-      @extend .link;
-    }
-    &__newsletter {
-      display: flex;
-    }
-    &__input {
-      width: 358px;
-      height: 50px;
-      margin-right: 12px;
-      background-color: transparent;
-      border: 1px solid $footer-border;
-      filter: drop-shadow(0px 4px 4px $filter-color);
-      border-radius: 4px;
-      color: $white;
-      padding-left: 16px;
-      line-height: 1.25;
-    }
-    &__studio-logo--blue {
-      color: $blue;
-    }
-    &__box {
-      margin: 0;
-    }
-
-    &__header {
-      color: $white;
-      text-transform: uppercase;
-      font-size: 700;
-      line-height: 1.2;
-      margin: 20px 0 20px 0;
-    }
-
-    &__icons {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 30px;
-      padding: 0;
-    }
-    &__link:hover,
-    &__link:focus {
-      cursor: pointer;
-      background-color: $blue;
-      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    }
+  &--contact {
+    flex-direction: column;
+    display: flex;
+    margin:0;
+    width: 231px;
+  }
+  &__newsletter {
+    display: flex;
+    flex-direction: row;
+  }
+  &__address{
+    align-items:flex-start;
+  }
+  &__input {
+    width: 358px;
+  }
+  &__box {
+    margin: 0;
+    display: block;
+  }
+  &__header {
+    margin: 20px 0 20px 0;
+  }
+}
 }
