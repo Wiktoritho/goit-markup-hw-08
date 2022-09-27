@@ -1,20 +1,29 @@
 .block {
-  padding: 94px 0;
+  padding: 60px 0;
+  margin: 0 auto;
   &__container {
     @include set-flex(column, center, center);
-    gap: 50px;
+    gap: 30px;
   }
   &__header {
-    @include font-styles(36px, 700, 0.03em);
+    @include font-styles(28px, 700, 0.03em);
     line-height: 1.16;
     margin: 0;
   }
-  &__background {
-    background-color: $background--white;
-  }
-  @extend .box;
 }
-.background--grey{
+.background--grey {
   background-color: $background--white;
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .block {
+    padding: 94px 0;
+    width: 1200px;
+    &__container {
+      gap: 50px;
+    }
+    &__header {
+      @include font-styles(36px, 700, 0.03em);
+    }
+  }
 }
