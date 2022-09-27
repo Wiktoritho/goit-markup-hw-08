@@ -1,13 +1,12 @@
 .speciality {
-  @extend .box;
-  padding: 0;
-  margin-top: 94px;
+  margin: 0 auto;
+  padding: 0 0 60px 0;
+  margin-top: 60px;
   &__container {
     list-style: none;
-    flex-direction: row;
-    display: flex;
+    margin: 0 15px 0 15px;
+    padding: 0;
     gap: 30px;
-    margin: 0;
   }
   &__icon {
     background-color: $background--white;
@@ -17,14 +16,41 @@
   }
   &__header {
     @include font-styles(14px, 700, 0.03em);
+    display: flex;
+    justify-content: center;
     font-style: normal;
     line-height: 1.14;
     text-transform: uppercase;
-    margin: 0 0 10px 0;
   }
   &__paragraph {
     line-height: 1.71;
     color: $grey;
     margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .speciality {
+    padding: 0 0 45px 0;
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__point {
+      width: 354px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .speciality {
+    width: 1200px;
+    padding: 0;
+    margin-top: 94px;
+    &__container {
+      list-style: none;
+      flex-wrap: nowrap;
+      gap: 30px;
+      margin: 0;
+    }
   }
 }
