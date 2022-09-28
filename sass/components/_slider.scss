@@ -5,11 +5,11 @@
   background-repeat: no-repeat;
   background-blend-mode: difference;
   background-color: $background--dark;
+  width: 100%;
   &__container {
     @include set-flex(column, center, center);
     padding: 118px 0;
     gap: 30px;
-    width: 480px;
     margin: 0 auto;
   }
   &__header {
