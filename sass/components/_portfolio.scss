@@ -64,6 +64,9 @@
 @media screen and (min-width: 768px) {
   .portfolio {
       margin-top: 30px;
+      &__container{
+        max-width: 768px;
+      }
       &__card {
         width: 354px;
       }
@@ -81,7 +84,7 @@
   .portfolio {
     margin-top: 50px;
     &__container {
-      width: 1200px;
+      max-width: 1200px;
     }
     &__card {
       height: 404px;
