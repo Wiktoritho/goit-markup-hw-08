@@ -11,7 +11,6 @@
     margin-bottom: 30px;
   }
   &__image {
-    height: 460px;
     width: 450px;
   }
   &__name {
@@ -45,6 +44,7 @@
 }
 @media screen and (min-width: 768px) {
   .team {
+    max-width: 768px;
     &__container {
       display: flex;
       flex-wrap: wrap;
@@ -55,19 +55,18 @@
       margin: 0;
     }
     &__image {
-      height: 374px;
       width: 354px;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .team {
+    max-width: 1200px;
     &__container {
       @include set-flex(row, center, center);
       gap: 30px;
     }
     &__image {
-      height: 270px;
       width: 260px;
     }
   }
