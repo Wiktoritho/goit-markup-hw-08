@@ -2,7 +2,10 @@
   background-color: $background--dark;
   padding: 60px 0;
   &__container {
+    min-width: 304px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
   }
   &__link {
     fill: $white;
@@ -37,11 +40,13 @@
     color: $contact--color;
   }
   &__newsletter {
+    width: 100%;
     @include set-flex(column, center, center);
     gap: 20px;
   }
   &__input {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     background-color: transparent;
     border: 1px solid $footer-border;
@@ -55,6 +60,7 @@
     color: $blue;
   }
   &__box {
+    width: 100%;
     @include set-flex(column,center,center);
     margin-bottom: 60px;
   }
@@ -91,6 +97,9 @@
         padding: 0;
         margin: 0;
       }
+      &__input{
+        width: 358px;
+      }
     }
 }
 @media screen and (min-width:1200px){
@@ -100,6 +109,7 @@
     margin: 0 auto;
     padding: 0;
     @include set-flex(row, center, none);
+    flex-wrap: nowrap;
     gap: 70px;
   }
   &--contact {
