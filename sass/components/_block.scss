@@ -1,6 +1,7 @@
 .block {
   padding: 60px 0;
   margin: 0 auto;
+  min-width: 304px;
   &__container {
     @include set-flex(column, center, center);
     gap: 30px;
