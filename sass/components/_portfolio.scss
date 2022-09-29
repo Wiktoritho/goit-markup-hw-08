@@ -1,6 +1,7 @@
 .portfolio {
   margin-top: 50px;
   margin-bottom: 94px;
+  min-width: 304px;
   &__container {
     margin: 0 auto;
   }
@@ -25,15 +26,11 @@
   &__card:hover &__animation {
     transform: translateY(0);
   }
-  &__image {
-    height: 294px;
-    width: 450px;
-  }
   &__animation {
     line-height: 1.6;
     font-size: 18px;
     height: 294px;
-    width: 450px;
+    width: 100%;
     position: relative;
     text-align: left;
     display: flex;
