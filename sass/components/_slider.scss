@@ -6,6 +6,7 @@
   background-blend-mode: difference;
   background-color: $background--dark;
   width: 100%;
+  min-width: 304px;
   &__container {
     @include set-flex(column, center, center);
     padding: 118px 0;
