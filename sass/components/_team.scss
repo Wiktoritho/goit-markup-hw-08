@@ -1,6 +1,7 @@
 .team {
   margin: 0;
   padding: 0;
+      min-width: 304px;
   &__card {
     @include set-flex(column, center, center);
     background-color: $white;
