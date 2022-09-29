@@ -30,7 +30,7 @@
     line-height: 1.6;
     font-size: 18px;
     height: 294px;
-    width: 100%;
+    max-width: 767px;
     position: relative;
     text-align: left;
     display: flex;
@@ -53,6 +53,7 @@
     color: $grey;
     margin: 0 0 20px 24px;
   }
+
   &-hidden {
     position: absolute;
     overflow: hidden;
@@ -60,22 +61,22 @@
 }
 @media screen and (min-width: 768px) {
   .portfolio {
-      margin-top: 30px;
-      &__container{
-        max-width: 768px;
-      }
-      &__card {
-        width: 354px;
-      }
-      &__image {
-        height: 294px;
-        width: 354px;
-      }
-      &__animation {
-        width: 354px;
-        padding: 0 24px;
-      }
+    margin-top: 30px;
+    &__container {
+      max-width: 768px;
     }
+    &__card {
+      width: 354px;
+    }
+    &__image {
+      height: 294px;
+      width: 354px;
+    }
+    &__animation {
+      width: 354px;
+      padding: 0 24px;
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
