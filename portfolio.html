@@ -316,63 +316,51 @@
         </div>
       </div>
     </footer>
-    <div class="mobile js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg height="18.67px" width="18.67px" class="mobile__exit">
-          <use href="./images/icons.svg#icon-close"></use>
+          <use href="./images/icons.svg#icon-close">
+          </use>
         </svg>
       </button>
-      <ul class="mobile__menu">
-        <li>
-          <a href="./index.html" class="mobile__menu-link">Agencja</a>
-        </li>
-        <li>
-          <a href="./portfolio.html" class="mobile__menu-link">Portfolio</a>
-        </li>
-        <li>
-          <a class="mobile__menu-link">Kontakt</a>
-        </li>
-      </ul>
-      <div class="mobile__links">
-        <ul class="mobile__contacts">
+      <div>
+        <ul class="mobile-menu list-pages">
           <li>
-            <a href="tel:+48111111111" class="mobile__contacts-phone"
-              >+48 111 111 111</a
-            >
+            <a href="./index.html" class="list-pages__link">Agencja</a>
           </li>
           <li>
-            <a href="mailto:info@devstudio.com" class="mobile__contacts-email"
-              >info@devstudio.com</a
-            >
+            <a href="./portfolio.html" class="list-pages__link">Portfolio</a>
+          </li>
+          <li>
+            <a class="list-pages__link">Kontakt</a>
           </li>
         </ul>
-        <ul class="mobile__socials">
+        <ul class="mobile-menu list-contacts">
           <li>
-            <a href="https://instagram.com" class="mobile__socials-link"
-              >Instagram</a
-            >
+            <a href="tel:+48111111111" class="list-contacts__phone">+48 111 111 111</a>
           </li>
-          <li class="mobile__socials-line">|</li>
           <li>
-            <a href="https://twitter.com" class="mobile__socials-link"
-              >Twitter</a
-            >
+            <a href="mailto:info@devstudio.com" class="list-contacts__mail">info@devstudio.com</a>
           </li>
-          <li class="mobile__socials-line">|</li>
-          <li>
-            <a href="https://facebook.com" class="mobile__socials-link"
-              >Facebook</a
-            >
+        </ul>
+        <ul class="mobile-menu list-social">
+          <a href="https://instagram.com" class="list-social__item--link">Instagram</a>
           </li>
-          <li class="mobile__socials-line">|</li>
+          <li class="list-social__item"></li>
           <li>
-            <a href="https://linkedin.com" class="mobile__socials-link"
-              >Linkedin</a
-            >
+            <a href="https://twitter.com" class="list-social__item--link">Twitter</a>
+          </li>
+          <li class="list-social__item"></li>
+          <li>
+            <a href="https://facebook.com" class="list-social__item--link">Facebook</a>
+          </li>
+          <li class="list-social__item"></li>
+          <li>
+            <a href="https://linkedin.com" class="list-social__item--link">Linkedin</a>
           </li>
         </ul>
       </div>
     </div>
-    <script defer src="js/mobile-menu.js"></script>
+      <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
