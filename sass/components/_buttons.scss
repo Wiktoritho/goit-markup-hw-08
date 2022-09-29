@@ -19,10 +19,12 @@
 }
 .buttons {
   list-style: none;
-  padding: 60px 70px 0 15px;
+  padding: 60px 15px 0 15px;
   &__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
   }
   &__item {
