@@ -85,7 +85,9 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
+      
     &__container {
+      max-width: 768px;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
@@ -106,7 +108,7 @@
 @media screen and (min-width: 1200px) {
   .footer {
     &__container {
-      width: 1200px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0;
       @include set-flex(row, center, none);
